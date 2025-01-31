@@ -1,0 +1,515 @@
+html{
+    font-family:PPeditorialOld-Regular;
+    margin-top: 1vh;
+}
+
+.nameclass{
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space between the elements */
+    align-items: center;
+    width: 98%;
+    font-style: oblique;
+    margin-left: 1.25vw;
+    color: #a79a98;
+
+    margin-right: 1.25vw;
+}
+
+.name {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, borderDisappear .5s .5s forwards;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 50%; }
+  }
+  
+  @keyframes borderDisappear {
+    from { border-right: 2px solid; }
+    to { border-right: none; }
+  }
+
+  .class {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    text-align: center;
+    animation: typing 3s steps(30, end) forwards, borderDisappear .5s .5s forwards;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 75%; }
+  }
+  
+  @keyframes borderDisappear {
+    from { border-right: 2px solid; }
+    to { border-right: none; }
+  }
+  
+.sem {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    text-align: right;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, borderDisappear .5s .5s forwards;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 75%; }
+  }
+  
+  @keyframes borderDisappear {
+    from { border-right: 2px solid; }
+    to { border-right: none; }
+  }
+
+.projects{
+    display:flex;
+    gap: 7.5vw;
+    justify-content: center;
+    align-items: center;
+    font-family:PPeditorialOld-Regular;
+    font-size: 1.5vw;
+    margin-top: 15vh;
+}
+
+.project1 {
+    width: 15vw; /* Adjust width */
+    height: 50vh; /* Adjust height to make it a rectangle */
+    text-align: center; /* Centers text inside each project */
+    padding: 20px; /* Adds spacing inside the div */
+    display: flex; /* Enables flexbox for centering text */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    background-color: #ffb3a3; /* Optional: Adds background color */
+    border-radius: 80px; /* Optional: Rounds the corners */
+    color: #ffc9be;
+    box-shadow: 0px 0px 2vw 1.25vw #ffb3a3;
+    transition: all 0.5s ease-in-out;
+}
+
+.project1 .hover-text {
+    position: absolute;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.6s ease-in-out;
+    font-size: 0.9vw;
+    color: #ffb3a3;
+    background: rgba(255, 255, 255, 0.8);
+    width: 15vw; /* Adjust width */
+    height: 50vh;
+    padding: 20px;
+    border-radius: 80px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left
+}
+
+.project1 .hover-text .p1title{
+    font-size:1.5vw;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.project1 .hover-text .p1arrow{
+    font-size: 3vw;
+    text-align: right;
+    line-height: 1.2;
+    text-decoration: none;
+    color: #ffb3a3;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.project1:hover .hover-text {
+    opacity: 1;
+}
+
+.project1:hover{
+    background-color:#ffffff;
+    cursor: pointer;
+}
+
+
+.project2 {
+    width: 15vw; /* Adjust width */
+    height: 50vh; /* Adjust height to make it a rectangle */
+    text-align: center; /* Centers text inside each project */
+    padding: 20px; /* Adds spacing inside the div */
+    display: flex; /* Enables flexbox for centering text */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    background-color: #a3dbff; /* Optional: Adds background color */
+    border-radius: 80px; /* Optional: Rounds the corners */
+    color: #c9eaff;
+    box-shadow: 0px 0px 2vw 1.25vw #a3dbff;
+}
+
+.project2 .hover-text {
+    position: absolute;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.6s ease-in-out;
+    font-size: 0.9vw;
+    color: #a3dbff;
+    background: rgba(255, 255, 255, 0.8);
+    width: 15vw; /* Adjust width */
+    height: 50vh;
+    padding: 20px;
+    border-radius: 80px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left
+}
+
+.project2 .hover-text .p2title{
+    font-size:1.5vw;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.project2 .hover-text .p2arrow{
+    font-size: 3vw;
+    text-align: right;
+    line-height: 1.2;
+    text-decoration: none;
+    color: #a3dbff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.project2:hover .hover-text {
+    opacity: 1;
+}
+
+.project2:hover{
+    background-color:#ffffff;
+    cursor: pointer;
+}
+
+.project3 {
+    width: 15vw; /* Adjust width */
+    height: 50vh; /* Adjust height to make it a rectangle */
+    text-align: center; /* Centers text inside each project */
+    padding: 20px; /* Adds spacing inside the div */
+    display: flex; /* Enables flexbox for centering text */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    background-color:#e8caff; /* Optional: Adds background color */
+    border-radius: 80px; /* Optional: Rounds the corners */
+    color: #f0ddff;
+    box-shadow: 0px 0px 2vw 1.25vw #e8caff;
+}
+
+.project3 .hover-text {
+    position: absolute;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.6s ease-in-out;
+    font-size: 0.9vw;
+    color: #e8caff;
+    background: rgba(255, 255, 255, 0.8);
+    width: 15vw; /* Adjust width */
+    height: 50vh;
+    padding: 20px;
+    border-radius: 80px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left
+}
+
+.project3 .hover-text .p3title{
+    font-size:1.5vw;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.project3 .hover-text .p3arrow{
+    font-size: 3vw;
+    text-align: right;
+    line-height: 1.2;
+    text-decoration: none;
+    color: #e8caff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.project3:hover .hover-text {
+    opacity: 1;
+}
+
+.project3:hover{
+    background-color:#ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+
+    html{
+        margin-top:2vh;
+    }
+    .nameclass{
+        display: block; /* Enables flexbox layout */
+        justify-content: space-between; /* Distributes space between the elements */
+        align-items: center;
+        width: 98%;
+        font-style: oblique;
+        margin-left: 1.5vw;
+        color: #a79a98;
+        margin-right: 1.5vw;
+        font-size: 3vw;
+        line-height: 1.2;
+    }
+
+    .name {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid;
+        width: 0;
+        animation: typing 3s steps(30, end) forwards, borderDisappear .5s .5s forwards;
+      }
+      
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 75%; }
+      }
+      
+      @keyframes borderDisappear {
+        from { border-right: 2px solid; }
+        to { border-right: none; }
+      }
+    
+      .class {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid;
+        width: 0;
+        text-align: left;
+        animation: typing 3s steps(30, end) forwards, borderDisappear .75s .75s forwards;
+      }
+      
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 75%; }
+      }
+      
+      @keyframes borderDisappear {
+        from { border-right: 2px solid; }
+        to { border-right: none; }
+      }
+      
+    .sem {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid;
+        width: 0;
+        text-align: left;
+        animation: typing 3s steps(30, end) forwards, borderDisappear 1s 1s forwards;
+      }
+      
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 75%; }
+      }
+      
+      @keyframes borderDisappear {
+        from { border-right: 2px solid; }
+        to { border-right: none; }
+      }
+
+    .projects{
+        display:block;
+        justify-content: center;
+        align-items: center;
+        font-family:PPeditorialOld-Regular;
+        font-size: 5vw;
+        margin-top: 5vh;
+    }
+    
+    .project1 {
+        margin-bottom:5vh;
+        width: 87vw; /* Adjust width */
+        height: 40vh; /* Adjust height to make it a rectangle */
+        text-align: center; /* Centers text inside each project */
+        padding: 20px; /* Adds spacing inside the div */
+        display: flex; /* Enables flexbox for centering text */
+        align-items: center; /* Centers text vertically */
+        justify-content: center; /* Centers text horizontally */
+        background-color: #ffb3a3; /* Optional: Adds background color */
+        border-radius: 40px; /* Optional: Rounds the corners */
+        color: #ffc9be;
+        box-shadow: 0px 0px 2vw 1.25vw #ffb3a3;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .project1 .hover-text {
+        position: absolute;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.6s ease-in-out;
+        font-size: 3.2vw;
+        color: #ffb3a3;
+        background: rgba(255, 255, 255, 0.8);
+        width: 87vw; /* Adjust width */
+        height: 40vh;
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        text-align: left
+    }
+    
+    .project1 .hover-text .p1title{
+        font-size:5vw;
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    .project1 .hover-text .p1arrow{
+        font-size: 8vw;
+        text-align: right;
+        line-height: 1.2;
+        text-decoration: none;
+        color: #ffb3a3;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    
+    .project1:hover .hover-text {
+        opacity: 1;
+    }
+    
+    .project1:hover{
+        background-color:#ffffff;
+        cursor: pointer;
+    }
+    
+    
+    .project2 {
+        margin-bottom:5vh;
+        width: 87vw; /* Adjust width */
+        height: 40vh; /* Adjust height to make it a rectangle */
+        text-align: center; /* Centers text inside each project */
+        padding: 20px; /* Adds spacing inside the div */
+        display: flex; /* Enables flexbox for centering text */
+        align-items: center; /* Centers text vertically */
+        justify-content: center; /* Centers text horizontally */
+        background-color: #a3dbff; /* Optional: Adds background color */
+        border-radius: 40px; /* Optional: Rounds the corners */
+        color: #c9eaff;
+        box-shadow: 0px 0px 2vw 1.25vw #a3dbff;
+    }
+    
+    .project2 .hover-text {
+        position: absolute;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.6s ease-in-out;
+        font-size: 3.2vw;
+        color: #a3dbff;
+        background: rgba(255, 255, 255, 0.8);
+        width: 87vw; /* Adjust width */
+        height: 40vh;
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        text-align: left
+    }
+    
+    .project2 .hover-text .p2title{
+        font-size:5vw;
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    .project2 .hover-text .p2arrow{
+        font-size: 8vw;
+        text-align: right;
+        line-height: 1.2;
+        text-decoration: none;
+        color: #a3dbff;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    
+    .project2:hover .hover-text {
+        opacity: 1;
+    }
+    
+    .project2:hover{
+        background-color:#ffffff;
+        cursor: pointer;
+    }
+    
+    .project3 {
+        margin-bottom:5vh;
+        width: 87vw; /* Adjust width */
+        height: 40vh; /* Adjust height to make it a rectangle */
+        text-align: center; /* Centers text inside each project */
+        padding: 20px; /* Adds spacing inside the div */
+        display: flex; /* Enables flexbox for centering text */
+        align-items: center; /* Centers text vertically */
+        justify-content: center; /* Centers text horizontally */
+        background-color:#e8caff; /* Optional: Adds background color */
+        border-radius: 40px; /* Optional: Rounds the corners */
+        color: #f0ddff;
+        box-shadow: 0px 0px 2vw 1.25vw #e8caff;
+    }
+    
+    .project3 .hover-text {
+        position: absolute;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.6s ease-in-out;
+        font-size: 3.2vw;
+        color: #e8caff;
+        background: rgba(255, 255, 255, 0.8);
+        width: 87vw; /* Adjust width */
+        height: 40vh;
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        text-align: left
+    }
+    
+    .project3 .hover-text .p3title{
+        font-size:5vw;
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    .project3 .hover-text .p3arrow{
+        font-size: 8vw;
+        text-align: right;
+        line-height: 1.2;
+        text-decoration: none;
+        color: #e8caff;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    
+    .project3:hover .hover-text {
+        opacity: 1;
+    }
+    
+    .project3:hover{
+        background-color:#ffffff;
+        cursor: pointer;
+    }
+}
